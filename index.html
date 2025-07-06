@@ -9,15 +9,29 @@
 <body>
   <div class="container">
     <h1>Water Quest</h1>
-    <p class="game-instructions">Collect 20 items to complete the game!</p>
+    <img src="img/partner logo.png" alt="Partner Logo" style="display:block;margin:0 auto 20px auto;max-width:180px;width:130px;height:auto;">
+    <p class="game-instructions">
+      🌊 <strong>Water Quest Challenge!</strong> 🌊<br>
+      Race against the clock to collect <strong>20 water cans</strong> and complete your mission.<br>
+      The more you collect, the more lives you save!<br>
+    </p>
     <div class="stats">
-      <p>Cans Collected: <span id="current-cans">0</span></p>
-      <p>Time Left: <span id="timer">30</span>s</p>
+      <div class="stats-box">
+        Score: <span id="current-cans">0</span>
+      </div>
+      <div class="stats-box">
+        Time Left: <span id="timer">30</span>s
+      </div>
     </div>
+    <div class="stats-actions">
+      <button id="start-game">Start Game</button>
+      <button id="restart-game" style="display:none;">Restart Game</button>
+    </div>
+    <div id="feedback-message"></div>
     <div id="achievements" class="achievement"></div>
     <div class="game-grid"></div>
-    <button id="start-game">Start Game</button>
   </div>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>
 </html>
